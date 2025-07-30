@@ -64,6 +64,38 @@
             font-weight: bold;
             margin: 0;
         }
+        /* Mobile responsiveness */
+        @media (max-width: 600px) {
+            body {
+                margin: 0.5em;
+            }
+            #title-box {
+                padding: 0.5em 1em;
+                margin: 1em auto 1em auto;
+                width: 98%;
+            }
+            h1 {
+                font-size: 2em;
+            }
+            .white-box-container {
+                flex-direction: column;
+                gap: 1em;
+                margin: 2em auto 1em auto;
+                align-items: center;
+            }
+            .white-box {
+                padding: 3em 1em;
+                width: 90vw;
+                min-width: unset;
+                max-width: 98vw;
+            }
+            .white-box p {
+                font-size: 1.2em;
+            }
+            #message {
+                font-size: 1em;
+            }
+        }
     </style>
 </head>
 <body>
