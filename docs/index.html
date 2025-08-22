@@ -8,8 +8,92 @@
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Caprasimo&display=swap" rel="stylesheet">
     <style>
-        body { font-family: Arial, sans-serif; margin: 2em; background: #d5a3a3; }
+        body { 
+            font-family: Arial, sans-serif; 
+            margin: 0; 
+            background: #d5a3a3; 
+            overflow-x: hidden;
+        }
         #message { font-size: 1.5em; color: #333; }
+        
+        /* Marquee containers */
+        .marquee-container {
+            position: fixed;
+            top: 0;
+            width: 50px;
+            height: 100vh;
+            z-index: 1000;
+            background: rgba(255, 255, 255, 1);
+            border-radius: 8px;
+            margin: 5px;
+            overflow: hidden;
+        }
+        
+        .marquee-left {
+            pointer-events: none;
+        }
+        
+        .marquee-left {
+            left: 0;
+            margin-left: 2px;
+        }
+        
+        .marquee-right {
+            right: 0;
+            pointer-events: auto;
+            margin-right: 2px;
+        }
+        
+        .marquee-content {
+            display: flex;
+            flex-direction: column;
+            height: 200%;
+            animation: marquee-scroll 30s linear infinite;
+        }
+        
+        .marquee-left .marquee-content {
+            animation-direction: reverse;
+        }
+        
+        @keyframes marquee-scroll {
+            0% { transform: translateY(0); }
+            100% { transform: translateY(-100%); }
+        }
+        
+        .marquee-item {
+            color: #a0352d;
+            padding: 80px 2px;
+            margin: 0;
+            font-size: 16px;
+            text-align: center;
+            white-space: nowrap;
+            transform: rotate(-90deg);
+            min-height: 200px;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            font-weight: 900;
+            text-shadow: none;
+        }
+        
+        .marquee-right .marquee-item {
+            cursor: pointer;
+            transition: all 0.3s ease;
+        }
+        
+        .marquee-right .marquee-item:hover {
+            color: #8b2a22;
+            text-shadow: 2px 2px 4px rgba(255,255,255,0.9);
+            transform: rotate(-90deg) scale(1.05);
+            transition: all 0.3s ease;
+        }
+        
+        /* Main content adjustment */
+        .main-content {
+            margin-left: 70px;
+            margin-right: 70px;
+            padding: 2em;
+        }
         #title-box {
             position: relative;
             background: #a0352d; /* cinnamon red */
@@ -103,7 +187,17 @@
         /* Mobile responsiveness */
         @media (max-width: 600px) {
             body {
-                margin: 0.5em;
+                margin: 0;
+            }
+            
+            .marquee-container {
+                display: none;
+            }
+            
+            .main-content {
+                margin-left: 0.5em;
+                margin-right: 0.5em;
+                padding: 0.5em;
             }
             #title-box {
                 padding: 0.5em 1em;
@@ -155,7 +249,51 @@
     <meta property="og:image" content="https://mycinnamonapple.com/docs/main-preview.png" />
 </head>
 <body>
-    <div id="title-box">
+    <!-- Left Marquee -->
+    <div class="marquee-container marquee-left">
+        <div class="marquee-content">
+            <div class="marquee-item">Questions, Comments, Suggestions? Email mycinnamonappleblog@gmail.com &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; Questions, Comments, Suggestions? Email mycinnamonappleblog@gmail.com &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; Questions, Comments, Suggestions? Email mycinnamonappleblog@gmail.com &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; Questions, Comments, Suggestions? Email mycinnamonappleblog@gmail.com &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; Questions, Comments, Suggestions? Email mycinnamonappleblog@gmail.com</div>
+        </div>
+    </div>
+    
+    <!-- Right Marquee -->
+    <div class="marquee-container marquee-right">
+        <div class="marquee-content">
+            <a href="about.html" style="text-decoration: none; color: inherit;">
+                <div class="marquee-item">About the Author</div>
+            </a>
+            <a href="about.html" style="text-decoration: none; color: inherit;">
+                <div class="marquee-item">About the Author</div>
+            </a>
+            <a href="about.html" style="text-decoration: none; color: inherit;">
+                <div class="marquee-item">About the Author</div>
+            </a>
+            <a href="about.html" style="text-decoration: none; color: inherit;">
+                <div class="marquee-item">About the Author</div>
+            </a>
+            <a href="about.html" style="text-decoration: none; color: inherit;">
+                <div class="marquee-item">About the Author</div>
+            </a>
+            <a href="about.html" style="text-decoration: none; color: inherit;">
+                <div class="marquee-item">About the Author</div>
+            </a>
+            <a href="about.html" style="text-decoration: none; color: inherit;">
+                <div class="marquee-item">About the Author</div>
+            </a>
+            <a href="about.html" style="text-decoration: none; color: inherit;">
+                <div class="marquee-item">About the Author</div>
+            </a>
+            <a href="about.html" style="text-decoration: none; color: inherit;">
+                <div class="marquee-item">About the Author</div>
+            </a>
+            <a href="about.html" style="text-decoration: none; color: inherit;">
+                <div class="marquee-item">About the Author</div>
+            </a>
+        </div>
+    </div>
+    
+    <div class="main-content">
+        <div id="title-box">
         <h1>My 
           <span class="cinnamon-slash-container">
             <span class="slash slash-left"></span>
@@ -210,6 +348,7 @@
         </a>
     </div>
     <div id="message"> </div>
+    </div>
     <!--
     <script>
         fetch('http://127.0.0.1:8000/')

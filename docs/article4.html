@@ -41,13 +41,19 @@
         }
         a.back-link {
             display: inline-block;
-            margin: 1em 0 0 2em;
-            color: #a0352d;
+            background: #a0352d;
+            color: white;
+            padding: 1em 2em;
             text-decoration: none;
+            border-radius: 10px;
             font-weight: bold;
+            margin: 2em auto;
+            transition: background-color 0.3s ease;
+            text-align: center;
+            width: fit-content;
         }
         a.back-link:hover {
-            text-decoration: underline;
+            background: #8b2a22;
         }
         /* Mobile responsiveness */
         @media (max-width: 600px) {
@@ -69,8 +75,9 @@
                 font-size: 1em;
             }
             a.back-link {
-                margin: 1em 0 0 0.5em;
+                margin: 1em auto;
                 font-size: 1em;
+                padding: 0.8em 1.5em;
             }
         }
         .cinnamon-slash-container {
@@ -133,6 +140,8 @@
         
         <p>All in all, these people in their twenties are incredibly hardworking, dedicated, and very silly people. They have good intentions even if they use terms like "rizz" in a questionable manner. The time they spend to reach their goals is unmatched, but I don't think putting some of that time aside to have food in the fridge and clean clothes would hurt. If you are a 26-year-old reading this, don't forget to treat yourself. :)</p>
     </div>
-    <a class="back-link" href="/index.html">&larr; Back to Home</a>
+    <div style="text-align: center;">
+        <a class="back-link" href="index.html">← Back to Home</a>
+    </div>
 </body>
 </html>
