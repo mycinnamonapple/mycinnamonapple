@@ -1,0 +1,178 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>I Rode in a Self-Driving Taxi and Lived to Tell the Tale</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Caprasimo&family=Libre+Baskerville:ital,wght@0,400;0,700;1,400&display=swap" rel="stylesheet">
+    <style>
+        body { font-family: "Libre Baskerville", serif; font-weight: 400; font-style: normal; margin: 2em; background: #d5a3a3; }
+        #title-box {
+            background: #a0352d;
+            border-radius: 20px;
+            padding: 0.5em 3em;
+            margin: 2em auto 2em auto;
+            width: fit-content;
+            box-shadow: 2px 6px 6px rgba(115, 112, 112, 0.8);
+            text-align: center;
+        }
+        h1 {
+            font-size: 2.5em;
+            text-align: center;
+            font-family: "Caprasimo", serif;
+            font-weight: 400;
+            font-style: normal;
+            color: #fff;
+            margin-bottom: 0;
+        }
+        #article-content {
+            background: #fff;
+            border-radius: 16px;
+            padding: 2em 3em;
+            margin: 2em auto;
+            width: 90%;
+            max-width: 800px;
+            box-shadow: 2px 4px 12px rgba(115, 112, 112, 0.15);
+            color: #222;
+            font-size: 1.1em;
+            line-height: 1.7;
+            font-family: "Libre Baskerville", serif;
+        }
+        a.back-link {
+            display: inline-block;
+            background: #a0352d;
+            color: white;
+            padding: 1em 2em;
+            text-decoration: none;
+            border-radius: 10px;
+            font-weight: bold;
+            margin: 2em auto;
+            transition: background-color 0.3s ease;
+            text-align: center;
+            width: fit-content;
+        }
+        a.back-link:hover {
+            background: #8b2a22;
+        }
+        figure {
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            margin: 2em 0;
+        }
+        figcaption {
+            margin-top: 0.5em;
+            font-size: 1em;
+            color: #555;
+            text-align: center;
+            max-width: 90%;
+        }
+        /* Mobile responsiveness */
+        @media (max-width: 600px) {
+            body {
+                margin: 0.5em;
+            }
+            #title-box {
+                padding: 0.5em 1em;
+                margin: 1em auto 1em auto;
+                width: 98%;
+            }
+            h1 {
+                font-size: 1.5em;
+            }
+            #article-content {
+                padding: 1em 0.5em;
+                margin: 1em auto;
+                width: 100%;
+                font-size: 1em;
+            }
+            a.back-link {
+                margin: 1em auto;
+                font-size: 1em;
+                padding: 0.8em 1.5em;
+            }
+            figure {
+                margin: 1em 0;
+            }
+            figcaption {
+                font-size: 0.95em;
+                max-width: 100%;
+            }
+        }
+        .cinnamon-slash-container {
+            position: relative;
+            display: inline-block;
+            background: #fff;
+            z-index: 1;
+            padding: 0 0.7em;
+            clip-path: polygon(10% 0, 100% 0, 90% 100%, 0% 100%);
+        }
+        .cinnamon-highlight {
+            position: relative;
+            z-index: 2;
+            color: #a0352d;
+            background: transparent;
+        }
+        .slash {
+            position: absolute;
+            top: 0;
+            width: 18px;
+            height: 100%;
+            background: none;
+            border-left: 6px solid #fff;
+            border-radius: 2px;
+            z-index: 3;
+            pointer-events: none;
+        }
+        .slash-left {
+            left: 0;
+            transform: rotate(25deg);
+        }
+        .slash-right {
+            right: 0;
+            transform: rotate(25deg);
+        }
+    </style>
+</head>
+<body>
+    <div id="title-box">
+        <h1>I Rode in a <span class="cinnamon-slash-container"><span class="slash slash-left"></span><span class="cinnamon-highlight">Self-Driving Taxi</span><span class="slash slash-right"></span></span> and Lived to Tell the Tale</h1>
+    </div>
+    <div id="article-content">
+        <p>No, the title does not lie, I am, in fact, a WAYMO survivor. Anyone who has gone to San Francisco in the past couple of years has seen these crazy-looking cars. I’ve been to San Francisco many times now, but never had the courage to ride in one… until now. (Might I add that I was in the car alone with my thoughts and no one else to support me through this.)</p>
+        <figure>
+            <img src="IMG_1270.jpg" alt="Waymo car photo" style="max-width:100%; border-radius:12px;">
+            <figcaption>Cautiously getting into the car.</figcaption>
+        </figure>
+        <p>The process was relatively simple and worked like ordering an Uber. I simply typed in my destination and paid about $9 for a 12-minute-long trip. For context, an Uber (with an actual person driving) would have cost $8, so they were almost the same price. My theory is that, with time, the price will lower for Waymo since they are just starting out.</p>
+        <p>My anxiety built up as the vehicle got closer. Finally, the car turned the corner in all her glory. The Waymo car is a white electric Jaguar I-PACE SUV with LiDAR sensors on the top and on the sides, making it look like a small ambulance—especially the minivan versions. I unlocked the car and cautiously stepped into the right-side back seat. The first thing I noticed was my very own mini iPad controller. With a shaky finger, I pressed “Start ride,” and I took off.</p>
+        <figure>
+            <img src="IMG_5872.jpg" alt="Waymo ride screen" style="max-width:100%; border-radius:12px;">
+            <figcaption>Not your usual I-Pad kid.</figcaption>
+        </figure>
+        <p>It was almost like Waymo predicted my anxiety since the default music was “ambient vibes” and the cabin was well ventilated, which combated the definitive sweat and overheating from the nerves. Eventually, I got over the initial shock of seeing the steering wheel move with nobody in the driver’s seat and assessed my surroundings. The car had a pleasant “new car” smell and no weird funky scent like some of the questionable Ubers and taxis I have gotten into. The carpets were relatively clean, and the seats had no stains, which, in hindsight, seems like a minimum, but I had no idea what to expect.</p>
+        <figure>
+            <video controls style="max-width:100%; border-radius:12px;">
+                <source src="IMG_5871.mov" type="video/mp4">
+                Your browser does not support the video tag.
+            </video>
+            <figcaption>A jarring sight</figcaption>
+        </figure>
+        <p>The car itself handled the SF hills like they were nothing. Every acceleration and stop was smooth—or, might I say, classy. I got dropped off at the Corona Heights Park parking lot with a feeling of… sadness? I had formed a connection with the car, which I named Brittney, and found that I missed her as she drove away to pick up another adventurous or extremely nervous passenger.</p>
+        <figure>
+            <video controls style="max-width:100%; border-radius:12px;">
+                <source src="IMG_5878.MOV" type="video/mp4">
+                Your browser does not support the video tag.
+            </video>
+            <figcaption>Bye Bye Brittney :( </figcaption>
+        </figure>
+        <p>Throughout the whole ride, though, there was one question in the back of my mind: Is a Waymo safer than a human-driven car? Well, Waymo has only gotten into five major accidents with injuries, and one with a human fatality. But here’s the thing: every single time, it was another human’s fault and not the Waymo’s. Waymo has 88% fewer serious-injury-or-worse crashes and 93% fewer pedestrian crashes with injuries, according to the Waymo website. They are very big on safety data transparency, which is good for them because their statistics will probably calm down skeptics.</p>
+        <p>After my run-ins with Facebook-reel-scrolling Uber drivers, I grew a newfound appreciation for this self-driving vehicle that doesn’t drive with a phone in its hand. Mark my words: I will be their number one supporter if they expand to Seattle and will recommend this experience to everyone who has the opportunity. The future is here, and it is waiting for you with its gentle ambient music, so step in!</p>
+    </div>
+    <div style="text-align: center;">
+        <a class="back-link" href="index.html">← Back to Home</a>
+    </div>
+</body>
+</html>

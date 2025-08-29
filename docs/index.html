@@ -6,10 +6,12 @@
     <title>My Cinnamon Apple</title>
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Caprasimo&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Caprasimo&family=Libre+Baskerville:ital,wght@0,400;0,700;1,400&display=swap" rel="stylesheet">
     <style>
         body { 
-            font-family: Arial, sans-serif; 
+            font-family: "Libre Baskerville", serif; 
+            font-weight: 400;
+            font-style: normal;
             margin: 0; 
             background: #d5a3a3; 
             overflow-x: hidden;
@@ -162,8 +164,10 @@
         }
 
         .white-box-link:hover .white-box {
-            box-shadow: 0 0 0 4px #a0352d33;
+            box-shadow: 0 16px 48px 0 rgba(60, 40, 40, 0.55), 0 3px 16px 0 rgba(60, 40, 40, 0.22); /* even heavier shadow */
+            transform: scale(1.06);
             cursor: pointer;
+            transition: box-shadow 0.25s cubic-bezier(0.4, 0.2, 0.2, 1), transform 0.25s cubic-bezier(0.4, 0.2, 0.2, 1);
         }
 
         .white-box {
@@ -173,7 +177,7 @@
             width: 30vw;
             min-width: 220px;
             max-width: 350px;
-            box-shadow: 2px 4px 12px rgba(115, 112, 112, 0.15);
+            box-shadow: 0 8px 32px 0 rgba(60, 40, 40, 0.45), 0 1.5px 8px 0 rgba(60, 40, 40, 0.18); /* heavy shadow */
             text-align: center;
             transition: box-shadow 0.2s;
             backdrop-filter: blur(2px); /* frosted glass effect */
@@ -223,6 +227,7 @@
                 width: 80vw;
                 min-width: unset;
                 max-width: 90vw;
+                box-shadow: 0 8px 32px 0 rgba(60, 40, 40, 0.45), 0 1.5px 8px 0 rgba(60, 40, 40, 0.18); /* heavy shadow for mobile */
             }
             .white-box p {
                 font-size: 1.2em;
@@ -244,6 +249,28 @@
             .slash-right {
                 right: -2px;
             }
+            .white-box-link:hover .white-box {
+                box-shadow: 0 16px 48px 0 rgba(60, 40, 40, 0.55), 0 3px 16px 0 rgba(60, 40, 40, 0.22); /* even heavier shadow for mobile */
+                transform: scale(1.04);
+                transition: box-shadow 0.25s cubic-bezier(0.4, 0.2, 0.2, 1), transform 0.25s cubic-bezier(0.4, 0.2, 0.2, 1);
+            }
+        }
+        .libre-baskerville-regular {
+          font-family: "Libre Baskerville", serif;
+          font-weight: 400;
+          font-style: normal;
+        }
+
+        .libre-baskerville-bold {
+          font-family: "Libre Baskerville", serif;
+          font-weight: 700;
+          font-style: normal;
+        }
+
+        .libre-baskerville-regular-italic {
+          font-family: "Libre Baskerville", serif;
+          font-weight: 400;
+          font-style: italic;
         }
     </style>
     <!-- Open Graph Meta Tags -->
@@ -309,6 +336,16 @@
         </h1>
     </div>
     <div class="white-box-container">
+        <a class="white-box-link" href="article5.html">
+            <div class="white-box">
+                <p>
+                  I Rode in a <span class="cinnamon-slash-container"><span class="slash slash-left"></span><span class="cinnamon-highlight">Self-Driving Taxi</span><span class="slash slash-right"></span></span> and Lived to Tell the Tale
+                </p>
+                <p style="font-size:1em; font-weight:normal;">
+                    No, the title does not lie, I am, in fact, a WAYMO survivor. Anyone who has gone to San Francisco in the past couple of years has seen these crazy-looking cars. I’ve been to San Francisco many times now, but never had the courage to ride in one… until now. (Might I add that I was in the car alone with my thoughts and no one else to support me through this.)
+                </p>
+            </div>
+        </a>
         <a class="white-box-link" href="article4.html">
             <div class="white-box">
                 <p>
@@ -329,6 +366,8 @@
                 </p>
             </div>
         </a>
+    </div>
+    <div class="white-box-container">
         <a class="white-box-link" href="article2.html">
             <div class="white-box">
                 <p>
@@ -339,8 +378,6 @@
                 </p>
             </div>
         </a>
-    </div>
-    <div class="white-box-container">
         <a class="white-box-link" href="article1.html">
             <div class="white-box">
                 <p>
