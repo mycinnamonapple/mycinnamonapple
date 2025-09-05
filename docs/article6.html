@@ -1,0 +1,156 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Anything But Cow</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Caprasimo&family=Libre+Baskerville:ital,wght@0,400;0,700;1,400&display=swap" rel="stylesheet">
+    <style>
+        body { font-family: "Libre Baskerville", serif; font-weight: 400; font-style: normal; margin: 2em; background: #d5a3a3; }
+        #title-box {
+            background: #a0352d;
+            border-radius: 20px;
+            padding: 0.5em 3em;
+            margin: 2em auto 2em auto;
+            width: fit-content;
+            box-shadow: 2px 6px 6px rgba(115, 112, 112, 0.8);
+            text-align: center;
+        }
+        h1 {
+            font-size: 2.5em;
+            text-align: center;
+            font-family: "Caprasimo", serif;
+            font-weight: 400;
+            font-style: normal;
+            color: #fff;
+            margin-bottom: 0;
+        }
+        #article-content {
+            background: #fff;
+            border-radius: 16px;
+            padding: 2em 3em;
+            margin: 2em auto;
+            width: 90%;
+            max-width: 800px;
+            box-shadow: 2px 4px 12px rgba(115, 112, 112, 0.15);
+            color: #222;
+            font-size: 1.1em;
+            line-height: 1.7;
+            font-family: "Libre Baskerville", serif;
+        }
+        a.back-link {
+            display: inline-block;
+            background: #a0352d;
+            color: white;
+            padding: 1em 2em;
+            text-decoration: none;
+            border-radius: 10px;
+            font-weight: bold;
+            margin: 2em auto;
+            transition: background-color 0.3s ease;
+            text-align: center;
+            width: fit-content;
+        }
+        a.back-link:hover {
+            background: #8b2a22;
+        }
+        figure {
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            margin: 2em 0;
+        }
+        figcaption {
+            margin-top: 0.5em;
+            font-size: 1em;
+            color: #555;
+            text-align: center;
+            max-width: 90%;
+        }
+        /* Mobile responsiveness */
+        @media (max-width: 600px) {
+            body {
+                margin: 0.5em;
+            }
+            #title-box {
+                padding: 0.5em 1em;
+                margin: 1em auto 1em auto;
+                width: 98%;
+            }
+            h1 {
+                font-size: 1.5em;
+            }
+            #article-content {
+                padding: 1em 0.5em;
+                margin: 1em auto;
+                width: 100%;
+                font-size: 1em;
+            }
+            a.back-link {
+                margin: 1em auto;
+                font-size: 1em;
+                padding: 0.8em 1.5em;
+            }
+            figure {
+                margin: 1em 0;
+            }
+            figcaption {
+                font-size: 0.95em;
+                max-width: 100%;
+            }
+        }
+        .cinnamon-slash-container {
+            position: relative;
+            display: inline-block;
+            background: #fff;
+            z-index: 1;
+            padding: 0 0.7em;
+            clip-path: polygon(10% 0, 100% 0, 90% 100%, 0% 100%);
+        }
+        .cinnamon-highlight {
+            position: relative;
+            z-index: 2;
+            color: #a0352d;
+            background: transparent;
+        }
+        .slash {
+            position: absolute;
+            top: 0;
+            width: 18px;
+            height: 100%;
+            background: none;
+            border-left: 6px solid #fff;
+            border-radius: 2px;
+            z-index: 3;
+            pointer-events: none;
+        }
+        .slash-left {
+            left: 0;
+            transform: rotate(25deg);
+        }
+        .slash-right {
+            right: 0;
+            transform: rotate(25deg);
+        }
+    </style>
+</head>
+<body>
+    <div id="title-box">
+        <h1>Anything But <span class="cinnamon-slash-container"><span class="slash slash-left"></span><span class="cinnamon-highlight">Cow</span><span class="slash slash-right"></span></span></h1>
+    </div>
+    <div id="article-content">
+        <p>Why did I go dairy-free for a week? Because I’m Lactose intolerant? Because I don’t like the taste of normal milk? Because I care for the environment? Well, the real answer is none of the above–although I do care for the environment– and might be a little more boring. I wanted to test myself and see how hard it was for a high schooler, whose family eats dairy, to not eat dairy.</p> 
+        <p> For some background information, I am a fan of dairy. Ask anyone who knows me and they’d agree. I drink a glass of the Fairlife protein milk pretty much daily and I am a cheese enthusiast. The only exception would be blue cheese because in my opinion, it is just not good. But give me a manchego or a Harbison spruce wrapped bloomy rind cheese and I would send blessings upon your family for 100 generations. I love cheese so much that I am currently planning a cheese tour of California, so do with that information what you will.</p>
+        <p> This idea came from trying a buffalo milk soft-serve. Yeah, you read that right, buffalo milk. How on earth can one come near a water buffalo, nonetheless milk it, is beyond my comprehension. The ice cream itself was delightful though. I got the vanilla flavour to truly experience the real taste and see if there were any differences but the only main one I got was that it felt really rich and tasted very, very milky. This makes sense, considering that buffalo milk is much higher in fats compared to cows milk, however it is lower in cholesterol and a teeny bit higher in protein. </p>
+        <p> Near the beginning of the challenge, I walked down the dairy alternative aisle at my local Fred Meyer to find my milk alternative that I would use for the week. I looked at the nutritional facts and found that the ideal option for me would be soy milk because of the protein value. Almond, oat, coconut, and rice milk only have 1g of protein or less per serving whereas soy had 7g, which is about the same as cow’s milk. Some people really have a burning hatred for soy milk because of the taste, but I really don’t mind. I have tried almost all of the main dairy alternative milks and enjoyed them all. </p>
+        <p> My meals included soy milk and granola, tomato pesto chicken sandwiches (no mozzarella or burrata though which was tragic and incredibly difficult for me), and salmon with veggies and potatoes (all cooked with olive oil of course, not butter). </p>
+        <p> With the highs though, come moments of utter defeat and painstaking setbacks. No, I did not complete this week 100% no cow, all thanks to a Domino’s pizza. To set the scene, I invited my friends to go swimming on our final day of summer before school started. Dinner time rolled around and I didn’t have any food on hand (which was strike one because to be dairy-free, you always have to be prepared) so I innocently thought that ordering a pizza would be a quick and easy solution that everyone would enjoy. The pizza arrived, and just in time because everyone was famished at this point. We sat down, no plates or anything, and ate like animals. It was not until I took the final bite of my slice that I realized I had just eaten cheese. Poets could not describe the feeling I had at that moment. Yes, it was good, but at what cost? My dignity? I screamed out and my friends thought I had broken a bone, but in my opinion, it was even worse. </p>
+        <p> After the incident, I kept to safe foods: Salmon and potatoes, (with olive oil again, not butter, do not come for me) a turkey and swiss sandwich with no swiss, fruit, and of course soy milk and granola. I lived a peaceful, yet slightly unsatisfied life. I realized that cheese plays such an important role in my life that living without it is just sad. Why would I limit myself from something that is so flavourful and brings me so much joy? I feel like Remy from Ratatouille when the fireworks and symphony go off in his mind every time I eat cheese. Yeah, cheese is going to stay. Forever. </p>
+    </div>
+    <div style="text-align: center;">
+        <a class="back-link" href="index.html">← Back to Home</a>
+    </div>
+</body>
+</html>
