@@ -188,6 +188,21 @@
             font-weight: bold;
             margin: 0;
         }
+        
+        /* Preview text styling - hidden by default */
+        .white-box p[style*="font-size:1em"] {
+            opacity: 0;
+            max-height: 0;
+            overflow: hidden;
+            transition: opacity 0.3s ease, max-height 0.3s ease;
+            margin: 0;
+        }
+        
+        /* Show preview text on hover */
+        .white-box-link:hover .white-box p[style*="font-size:1em"] {
+            opacity: 1;
+            max-height: 200px;
+        }
         /* Mobile responsiveness */
         @media (max-width: 600px) {
             body {
@@ -231,6 +246,12 @@
             }
             .white-box p {
                 font-size: 1.2em;
+            }
+            
+            /* Mobile preview text hover effect */
+            .white-box-link:hover .white-box p[style*="font-size:1em"] {
+                opacity: 1;
+                max-height: 150px;
             }
             #message {
                 font-size: 1em;
