@@ -1,0 +1,172 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Turning Up the Heat</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Caprasimo&family=Libre+Baskerville:ital,wght@0,400;0,700;1,400&display=swap" rel="stylesheet">
+    <style>
+        body { font-family: "Libre Baskerville", serif; font-weight: 400; font-style: normal; margin: 2em; background: #d5a3a3; }
+        #title-box {
+            background: #a0352d;
+            border-radius: 20px;
+            padding: 0.5em 3em;
+            margin: 2em auto 2em auto;
+            width: fit-content;
+            box-shadow: 2px 6px 6px rgba(115, 112, 112, 0.8);
+            text-align: center;
+        }
+        h1 {
+            font-size: 3em;
+            text-align: center;
+            font-family: "Caprasimo", serif;
+            font-weight: 400;
+            font-style: normal;
+            color: #fff;
+            margin-bottom: 0;
+        }
+        #article-content {
+            background: #fff;
+            border-radius: 16px;
+            padding: 2em 3em;
+            margin: 2em auto;
+            width: 90%;
+            max-width: 800px;
+            box-shadow: 2px 4px 12px rgba(115, 112, 112, 0.15);
+            color: #222;
+            font-size: 1.1em;
+            line-height: 1.7;
+            font-family: "Libre Baskerville", serif;
+        }
+        a.back-link {
+            display: inline-block;
+            background: #a0352d;
+            color: white;
+            padding: 1em 2em;
+            text-decoration: none;
+            border-radius: 10px;
+            font-weight: bold;
+            margin: 2em auto;
+            transition: background-color 0.3s ease;
+            text-align: center;
+            width: fit-content;
+        }
+        a.back-link:hover {
+            background: #8b2a22;
+        }
+        /* Mobile responsiveness */
+        @media (max-width: 600px) {
+            body {
+                margin: 0.5em;
+            }
+            #title-box {
+                padding: 0.5em 1em;
+                margin: 1em auto 1em auto;
+                width: 98%;
+            }
+            h1 {
+                font-size: 2em;
+            }
+            #article-content {
+                padding: 1em 0.5em;
+                margin: 1em auto;
+                width: 100%;
+                font-size: 1em;
+            }
+            a.back-link {
+                margin: 1em auto;
+                font-size: 1em;
+                padding: 0.8em 1.5em;
+            }
+        }
+        .cinnamon-slash-container {
+            position: relative;
+            display: inline-block;
+            background: #fff;
+            z-index: 1;
+            padding: 0 0.7em;
+            clip-path: polygon(10% 0, 100% 0, 90% 100%, 0% 100%);
+        }
+        .cinnamon-highlight {
+            position: relative;
+            z-index: 2;
+            color: #a0352d;
+            background: transparent;
+        }
+        .slash {
+            position: absolute;
+            top: 0;
+            width: 18px;
+            height: 100%;
+            background: none;
+            border-left: 6px solid #fff;
+            border-radius: 2px;
+            z-index: 3;
+            pointer-events: none;
+        }
+        .slash-left {
+            left: 0;
+            transform: rotate(25deg);
+        }
+        .slash-right {
+            right: 0;
+            transform: rotate(25deg);
+        }
+        .libre-baskerville-regular {
+          font-family: "Libre Baskerville", serif;
+          font-weight: 400;
+          font-style: normal;
+        }
+
+        .libre-baskerville-bold {
+          font-family: "Libre Baskerville", serif;
+          font-weight: 700;
+          font-style: normal;
+        }
+
+        .libre-baskerville-regular-italic {
+          font-family: "Libre Baskerville", serif;
+          font-weight: 400;
+          font-style: italic;
+        }
+        .article-image {
+            width: 100%;
+            max-width: 600px;
+            height: auto;
+            border-radius: 12px;
+            margin: 2em auto 0.5em auto;
+            display: block;
+            box-shadow: 2px 4px 12px rgba(115, 112, 112, 0.15);
+        }
+        .image-caption {
+            text-align: center;
+            font-style: italic;
+            color: #666;
+            font-size: 0.9em;
+            margin: 0 auto 2em auto;
+            max-width: 600px;
+        }
+    </style>
+</head>
+<body>
+    <div id="title-box">
+        <h1>Turning Up the <span class="cinnamon-slash-container"><span class="slash slash-left"></span><span class="cinnamon-highlight">Heat</span><span class="slash slash-right"></span></span></h1>
+    </div>
+    <div id="article-content">
+        <p>Imagine this: you go into a hot room, put your yoga mat down, and start to settle into a kneeling, meditative position when you suddenly realize that everyone else is at least 12 years older than you.</p>
+        
+        <p>I started my yoga journey approximately one year ago with my friend, who is now in college. I was looking for ways to increase my inner peace and have meditative experiences more frequently as a stressed-out high schooler. Now, let me tell you, I had no idea what I was in for because my past experience with yoga consisted of short YouTube videos that were just stretching in a 68-degree room. This was a completely different experience—starting off with the fact that it is 85 degrees Fahrenheit at the beginning of class (yes, it gets even hotter later).</p>
+        
+        <p>My first class with my friend was quite the humbling experience. I genuinely worried about my auditory comprehension skills because the instructor would say things like, "Bring your left foot to the inside of your right hand," and by the time I figured out my lefts and rights, she had already moved on to the next pose. In the first couple of classes, I spent most of the time looking around for guidance because I had no idea what I was doing. I thought that since I was young, I would have better flexibility, balance, and overall agility compared to most of the older people in the class—but they were kicking my butt. I'd look over my shoulder, and they would be doing handstands. And by "they," I mean the majority of the class. It never ceases to amaze me how strong the people in my yoga classes are, and for a while, it made me feel out of place since I was a high schooler struggling to keep up.</p>
+        
+        <p>So thus began my inversion journey. I told myself that I wanted to reach my goal of a headstand, so I spent time outside of class practicing it and sending videos of my progress to my friend for accountability. Surprisingly, I can hold one now, but I'm still working on that handstand that it seems like everyone can do—even those in their 50s.</p>
+        
+        <p>I've now reached the point in my yoga journey where I embrace the heated room, and the people checking me in know my name. I have indoctrinated my mom and another friend into these classes, so I am a yoga recruiter menace. I even led a yoga flow for my class last year. My auditory comprehension skills have gotten slightly better—or maybe I just remember the poses—but I am able to keep up without looking around… as much as before. Most of all, I have learned not to care: not caring about whether I fall down when I lose my balance during half moon, not caring if I sweat during the class, and most of all, not caring if I am the only person my age in this class. There is no need to stress about feeling out of place when you could just be in the moment and try your best. Nobody, in all 55 classes I have been to, has ever told me I shouldn't be there, so I implore you to push yourself out of your comfort zone and do something totally different.</p>
+    </div>
+    <div style="text-align: center;">
+        <a class="back-link" href="index.html">← Back to Home</a>
+    </div>
+</body>
+</html>
