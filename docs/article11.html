@@ -1,0 +1,156 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Facebook Fiasco</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Caprasimo&family=Libre+Baskerville:ital,wght@0,400;0,700;1,400&display=swap" rel="stylesheet">
+    <style>
+        body { font-family: "Libre Baskerville", serif; font-weight: 400; font-style: normal; margin: 2em; background: #d5a3a3; }
+        #title-box {
+            background: #a0352d;
+            border-radius: 20px;
+            padding: 0.5em 3em;
+            margin: 2em auto 2em auto;
+            width: fit-content;
+            box-shadow: 2px 6px 6px rgba(115, 112, 112, 0.8);
+            text-align: center;
+        }
+        h1 {
+            font-size: 2.5em;
+            text-align: center;
+            font-family: "Caprasimo", serif;
+            font-weight: 400;
+            font-style: normal;
+            color: #fff;
+            margin-bottom: 0;
+        }
+        #article-content {
+            background: #fff;
+            border-radius: 16px;
+            padding: 2em 3em;
+            margin: 2em auto;
+            width: 90%;
+            max-width: 800px;
+            box-shadow: 2px 4px 12px rgba(115, 112, 112, 0.15);
+            color: #222;
+            font-size: 1.1em;
+            line-height: 1.7;
+            font-family: "Libre Baskerville", serif;
+        }
+        a.back-link {
+            display: inline-block;
+            background: #a0352d;
+            color: white;
+            padding: 1em 2em;
+            text-decoration: none;
+            border-radius: 10px;
+            font-weight: bold;
+            margin: 2em auto;
+            transition: background-color 0.3s ease;
+            text-align: center;
+            width: fit-content;
+        }
+        a.back-link:hover {
+            background: #8b2a22;
+        }
+        figure {
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            margin: 2em 0;
+        }
+        figcaption {
+            margin-top: 0.5em;
+            font-size: 1em;
+            color: #555;
+            text-align: center;
+            max-width: 90%;
+        }
+        /* Mobile responsiveness */
+        @media (max-width: 600px) {
+            body {
+                margin: 0.5em;
+            }
+            #title-box {
+                padding: 0.5em 1em;
+                margin: 1em auto 1em auto;
+                width: 98%;
+            }
+            h1 {
+                font-size: 1.5em;
+            }
+            #article-content {
+                padding: 1em 0.5em;
+                margin: 1em auto;
+                width: 100%;
+                font-size: 1em;
+            }
+            a.back-link {
+                margin: 1em auto;
+                font-size: 1em;
+                padding: 0.8em 1.5em;
+            }
+            figure {
+                margin: 1em 0;
+            }
+            figcaption {
+                font-size: 0.95em;
+                max-width: 100%;
+            }
+        }
+        .cinnamon-slash-container {
+            position: relative;
+            display: inline-block;
+            background: #fff;
+            z-index: 1;
+            padding: 0 0.7em;
+            clip-path: polygon(10% 0, 100% 0, 90% 100%, 0% 100%);
+        }
+        .cinnamon-highlight {
+            position: relative;
+            z-index: 2;
+            color: #a0352d;
+            background: transparent;
+        }
+        .slash {
+            position: absolute;
+            top: 0;
+            width: 18px;
+            height: 100%;
+            background: none;
+            border-left: 6px solid #fff;
+            border-radius: 2px;
+            z-index: 3;
+            pointer-events: none;
+        }
+        .slash-left {
+            left: 0;
+            transform: rotate(25deg);
+        }
+        .slash-right {
+            right: 0;
+            transform: rotate(25deg);
+        }
+    </style>
+</head>
+<body>
+    <div id="title-box">
+        <h1>Facebook <span class="cinnamon-slash-container"><span class="slash slash-left"></span><span class="cinnamon-highlight">Fiasco</span><span class="slash slash-right"></span></span></h1>
+    </div>
+    <div id="article-content">
+        <p>With the start of the new year comes the monumental urge to reshape, rethink, but most of all redo my entire room (and entire house, but alas, that is not up to me, a mere resident who doesn't pay rent). From a young age, I would constantly move my bed from the corner, to the middle, to the window, and to pretty much any place imaginable. I've lived in the same house my entire life, so naturally, I craved novelty.</p>
+        <p>I found myself scrolling on Pinterest for hours, searching for décor ideas. Tile backsplashes and stained-glass skylights called my name, but that would require some serious remodeling, not to mention a Santorini lookout view. So, I asked myself, "What do I need the most that doesn't involve an excavator?" Well, duh, a lamp. And not just any lamp, oh no. I'm thinking multicolored, ambiance-lighting, medium-to-large, ceramic-and-glass-infused lamp. Gone are the days of awkward overhead lighting when it comes to this ambiance powerhouse.</p>
+        <p>For context (and I believe there needs to be context, because why would a high schooler in this day and age be on Facebook?), I always see my sister scrolling on Facebook Marketplace to find new furniture for her apartment. She lucked out with nice couches and tables and only got scammed once by mean college boys, so all in all, I'd say it's been a good experience. I, too, wanted this for myself and for my redecoration journey, so I made an account… almost. I signed up with my phone number, confirmed it, put in my real birthday now that I am eighteen, sent a video confirmation that I was human, and depicted which of the nine pictures on the screen had stoplights. Apparently, that wasn't enough, because I had to wait over an hour for someone to confirm that I was a human and could have a Facebook account. I ate dinner as quickly as I could, eager to see my result and continue my search for a lamp. I opened my computer, logged into my account, and saw the most terrifying web page I've ever seen.</p>
+        <figure>
+            <img src="Screenshot 2026-01-17 161552.png" alt="Facebook rejection message" style="max-width: 100%; height: auto;">
+        </figure>
+        <p>The rejection was too much to bear. The shock of not being good enough for Facebook shook me to my core. Adults joke about young people not being on Facebook, but how can we be if all they do is reject us? Maybe it is for the better. Maybe Facebook Marketplace would have created an addiction so strong that I would develop nomophobia (but I doubt it). But then the biggest fear of all crept in: how on earth would I survive my early twenties without cheaper furniture from Facebook Marketplace? Well, I guess I will just have to become a millionaire sooner rather than later.</p>
+    </div>
+    <div style="text-align: center;">
+        <a class="back-link" href="index.html">← Back to Home</a>
+    </div>
+</body>
+</html>
